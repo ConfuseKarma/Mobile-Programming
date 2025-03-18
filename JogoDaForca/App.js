@@ -77,6 +77,8 @@ export default function App() {
 
   // Verifica condições de vitória/derrota
   useEffect(() => {
+  // Só verifica se há uma palavra válida
+  if (currentWord) {
     const uniqueLetters = [...new Set(currentWord.split(''))];
     if (uniqueLetters.every(letter => guessedLetters.includes(letter))) {
       setGameStatus('won');
@@ -84,7 +86,8 @@ export default function App() {
     if (errors >= 6) {
       setGameStatus('lost');
     }
-  }, [guessedLetters, errors]);
+  }
+}, [guessedLetters, errors, currentWord]);
 
   // Processa tentativa de letra
   const handleGuess = (letter) => {
