@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "891f1343-b06a-4f6e-a030-5f8c7e4af967",
+		"name": "Pessoas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7,\r\n    \"nome\": \"Cristina Silva\",\r\n    \"sexo\": \"F\",\r\n    \"DataNascimento\": \"1989-02-15\",\r\n    \"CidadeId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pessoa",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/filter/getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/pessoa/filter/getAll/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa",
+						"filter",
+						"getAll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/filter/getNextId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/pessoa/filter/getNextId",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa",
+						"filter",
+						"getNextId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nome\": \"Anaisa Silva Sauro\",\r\n    \"sexo\": \"F\",\r\n    \"DataNascimento\": \"1969-09-12\",\r\n    \"CidadeId\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pessoa/8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pessoa/8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pessoa/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pessoa",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}

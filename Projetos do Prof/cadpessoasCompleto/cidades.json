@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "6258bc0043eb9be0de72bc51"
+  },
+  "id": 1,
+  "nome": "São Bernardo do campo"
+},{
+  "_id": {
+    "$oid": "6258bc1843eb9be0de72bc52"
+  },
+  "id": 2,
+  "nome": "Santo André"
+},{
+  "_id": {
+    "$oid": "6258bc4c43eb9be0de72bc53"
+  },
+  "id": 3,
+  "nome": "Diadema"
+},{
+  "_id": {
+    "$oid": "6258bc5d43eb9be0de72bc54"
+  },
+  "id": 4,
+  "nome": "Mauá"
+},{
+  "_id": {
+    "$oid": "6258bc7543eb9be0de72bc55"
+  },
+  "id": 5,
+  "nome": "Adamantina"
+},{
+  "_id": {
+    "$oid": "625b2beb43eb9be0de72bc62"
+  },
+  "id": "6",
+  "nome": "Santa fé do sul"
+},{
+  "_id": {
+    "$oid": "625b2c1443eb9be0de72bc63"
+  },
+  "id": "7",
+  "nome": "Taubaté"
+},{
+  "_id": {
+    "$oid": "625b2c5743eb9be0de72bc64"
+  },
+  "id": "8",
+  "nome": "Fernandópolis"
+},{
+  "_id": {
+    "$oid": "625b2c6f43eb9be0de72bc65"
+  },
+  "id": "9",
+  "nome": "Boituva"
+},{
+  "_id": {
+    "$oid": "625b2c7c43eb9be0de72bc66"
+  },
+  "id": "10",
+  "nome": "Rio de Janeiro"
+},{
+  "_id": {
+    "$oid": "625b2c8b43eb9be0de72bc67"
+  },
+  "id": "11",
+  "nome": "Curitiba"
+},{
+  "_id": {
+    "$oid": "625b2cbe43eb9be0de72bc68"
+  },
+  "id": "12",
+  "nome": "Rio claro"
+}]
